@@ -28,12 +28,11 @@ public class PlayerController : MonoBehaviour
 
     public void FixedUpdate()
     {
+        
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
         rb.AddForce(movement * speed);
     }
 
-    // called by unity when the player entity first touches a trigger collider and is given a reference
-    // to the trigger collider that will be touched
-
+    
 }
